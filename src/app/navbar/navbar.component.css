@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #2C3E50 !important;
+    padding-block: 20px !important;
+    padding-bottom: 30px !important;
+
+}
+
+.navbar h2 {
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px !important;
+    margin-inline-end: 12px;
+}

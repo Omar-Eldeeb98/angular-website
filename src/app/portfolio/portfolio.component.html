@@ -1,0 +1,125 @@
+<div class="container p-3">
+  <h1 class="fw-bolder text-center pt-3">PORTFOLIO COMPONENT</h1>
+  <div class="icon_container mx-auto mb-5">
+    <i class="fa-solid fa-star"></i>
+  </div>
+
+  <div class="row g-5 position-relative">
+    <div class="col-md-4">
+      <div class="image_container rounded" (click)="showModel1()">
+        <img class="w-100 rounded" src="assets/images/poert1.png" alt="port1" />
+        <div class="layer rounded">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image_container rounded" (click)="showModel2()">
+        <img class="w-100 rounded" src="assets/images/port2.png" alt="port2" />
+        <div class="layer rounded">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image_container rounded" (click)="showModel3()">
+        <img class="w-100 rounded" src="assets/images/port3.png" alt="port3" />
+        <div class="layer rounded">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image_container rounded" (click)="showModel1()">
+        <img class="w-100 rounded" src="assets/images/poert1.png" alt="port1" />
+        <div class="layer rounded">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image_container rounded" (click)="showModel2()">
+        <img class="w-100 rounded" src="assets/images/port2.png" alt="port2" />
+        <div class="layer rounded">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="image_container rounded" (click)="showModel3()">
+        <img class="w-100 rounded" src="assets/images/port3.png" alt="port3" />
+        <div class="layer rounded">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  *ngIf="img1Flag"
+  class="model position-fixed d-flex align-items-center"
+  id="model"
+>
+  <i
+    class="fa-regular fa-circle-xmark colse-model-icon fs-3"
+    (click)="closeModel()"
+  ></i>
+  <i
+    class="fa-solid fa-circle-arrow-left fs-3 move-left"
+    (click)="backimg1()"
+  ></i>
+  <i
+    class="fa-solid fa-circle-arrow-right fs-3 move-right"
+    (click)="forwardimg1()"
+  ></i>
+
+  <div class="image_container___ w-50 mx-auto px-2">
+    <img [src]="imgSrc[0]" class="w-100 rounded-2 img-thumbnail" alt="port1" />
+  </div>
+</div>
+
+<div
+  *ngIf="img2Flag"
+  class="model position-fixed d-flex align-items-center"
+  id="model"
+>
+  <i
+    class="fa-regular fa-circle-xmark colse-model-icon fs-3"
+    (click)="closeModel()"
+  ></i>
+  <i
+    class="fa-solid fa-circle-arrow-left fs-3 move-left"
+    (click)="backimg2()"
+  ></i>
+  <i
+    class="fa-solid fa-circle-arrow-right fs-3 move-right"
+    (click)="forwardimg2()"
+  ></i>
+
+  <div class="image_container___ w-50 mx-auto px-2">
+    <img [src]="imgSrc[1]" class="w-100 rounded-2 img-thumbnail" alt="port2" />
+  </div>
+</div>
+<div
+  *ngIf="img3Flag"
+  class="model position-fixed d-flex align-items-center"
+  id="model"
+>
+  <i
+    class="fa-regular fa-circle-xmark colse-model-icon fs-3"
+    (click)="closeModel()"
+  ></i>
+  <i
+    class="fa-solid fa-circle-arrow-left fs-3 move-left"
+    (click)="backimg3()"
+  ></i>
+  <i
+    class="fa-solid fa-circle-arrow-right fs-3 move-right"
+    (click)="forwardimg3()"
+  ></i>
+
+  <div class="image_container___ w-50 mx-auto px-2">
+    <img [src]="imgSrc[2]" class="w-100 rounded-2 img-thumbnail" alt="port3" />
+  </div>
+</div>

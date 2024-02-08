@@ -1,0 +1,41 @@
+#homesection {
+
+    background-color: #1ABC9C;
+}
+
+
+
+.icon_container {
+    width: fit-content;
+    font-size: 20px;
+    position: relative;
+    color: white;
+}
+
+.icon_container ::after {
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+
+
+.icon_container::before {
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    margin-right: 10px;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}

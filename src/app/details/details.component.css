@@ -1,0 +1,36 @@
+#sec2 {
+    background-color: #2C3E50;
+}
+
+.social_container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    margin-inline-end: 8px;
+}
+
+.social i {
+    font-size: 22px;
+}
+
+.social:hover {
+    color: #1ABC9C;
+    background-color: white;
+    border-color: #1ABC9C;
+}
+
+span.name {
+    color: #1ABC9C;
+}
